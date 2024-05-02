@@ -15,24 +15,33 @@
 </head>
 <body>
     <!-- #app — контейнер для нашего веб-приложения -->
-    <div id="app" class="container mx-auto grid grid-cols-12">
-        <header class="col-span-12 flex justify-between items-center pl-2  bg-slate-600 text-slate-50">
+    <div id="app" class="h-screen grid grid-cols-12 auto-rows-max">
+        <header class="col-span-12 h-max flex justify-between items-center pl-2 py-[15px] bg-slate-600 text-slate-50">
             <h2 class="text-3xl">Олег Нуржанов</h2>
-            <nav class="flex text-xl *:py-4 *:px-4 hover:*:bg-slate-800">
-                <a href="#">Блог</a>
-                <a href="#">Домашние задания</a>
-                <a href="#">Портфолио</a>
-                <a href="#">Обо мне</a>
-                <a href="#">Контакты</a>
+            <nav>
+                <ul class="flex text-xl">
+                    <li><a class="hover:border-t-4 border-slate-800 p-4" href="#">Блог</a></li>
+                    <li class="relative group">
+                        <a class="hover:border-t-4 border-slate-800 p-4 " href="#">Домашние задания<span class="inline-block ml-2 rotate-90">›</span></a>
+                        <ul class="hidden group-hover:block absolute top-11 left-0 w-full bg-slate-600 hover:*:bg-slate-800 *:p-2">
+                            <li><a class="block w-full h-full" href="#">1 часть</a></li>
+                            <li><a class="block w-full h-full" href="#">2 часть</a></li>
+                            <li><a class="block w-full h-full" href="#">3 часть</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="hover:border-t-4 border-slate-800 p-4" href="#">Портфолио</a></li>
+                    <li><a class="hover:border-t-4 border-slate-800 p-4" href="#">Обо мне</a></li>
+                    <li><a class="hover:border-t-4 border-slate-800 p-4" href="#">Контакты</a></li>
+                </ul>
             </nav>
         </header>
-        <main class="col-span-8">
-            
+        <main class=" col-span-8 h-[1800px]">
+            Lorem*100
         </main>
-        <aside class="col-span-4">
+        <aside class="col-span-4 h-[1800px]">
 
         </aside>
-        <footer class="col-span-12 pl-2 bg-slate-600 text-slate-50">
+        <footer class="col-span-12 self-end h-max px-2 py-4 bg-slate-600 text-slate-50">
             <h3 class="text-xl">Academy TOP © 2024</h3>
         </footer>
     </div>
