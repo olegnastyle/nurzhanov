@@ -3,35 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .ns_grid_template {
-            display: grid;
-            grid-template-rows: auto 1fr auto;
-            grid-template-areas: "header header header" "main main aside" "footer footer footer";
-            width: 100vw;
-            height: 100vh;
-        }
-    </style>
     <title>Document</title>
+    <!-- подключаем TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- подключаем свои стили -->
+    <link rel="stylesheet" href="./style/main.css">
 </head>
 
 <body class="ns_grid_template">
 
-    <header class="bg-blue-500 h-20" style="grid-area: header;">
-        <code>header</code>
+    <header class="h-20 px-4 flex items-center justify-between">
+        <h2 class="text-3xl uppercase text-teal-400"><span class="text-teal-600">НА</span>стиле</h2>
+        <nav>
+            <ul class="flex text-xl relative">
+                <li><a class="p-4 border-b-2 text-teal-950 hover:text-teal-600 border-teal-300 hover:border-teal-600" href="#">Блог</a></li>
+                <li class="relative">
+                    <a class="p-4 border-b-2 text-teal-950 hover:text-teal-600 border-teal-300 hover:border-teal-600" href="#">Домашние задания<span class="inline-block rotate-90 ml-2">›</span></a>
+                    <ul class="w-full mt-[15px] absolute bg-teal-300 z-10">
+                        <li><a class="block p-2" href="#">Часть 1</a></li>
+                        <li><a class="block p-2" href="#">Часть 2</a></li>
+                        <li><a class="block p-2" href="#">Часть 3</a></li>
+                    </ul>
+                </li>
+                <li><a class="p-4 border-b-2 text-teal-950 hover:text-teal-600 border-teal-300 hover:border-teal-600" href="#">Портфолио</a></li>
+                <li><a class="p-4 border-b-2 text-teal-950 hover:text-teal-600 border-teal-300 hover:border-teal-600" href="#">Обо мне</a></li>
+                <li><a class="p-4 border-b-2 text-teal-950 hover:text-teal-600 border-teal-300 hover:border-teal-600" href="#">Навыки</a></li>
+                <li><a class="p-4 border-b-2 text-teal-950 hover:text-teal-600 border-teal-300 hover:border-teal-600" href="#">Контакты</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="bg-red-500" style="grid-area: main;">
+    <main class="">
         <code>main</code>
     </main>
 
-    <aside class="bg-green-500" style="grid-area: aside;">
+    <aside class="">
         <code>aside</code>
     </aside>
 
-    <footer class="h-20 bg-yellow-500" style="grid-area: footer;">
-        <code>footer</code>
+    <footer class="h-20 px-4 flex items-center justify-between">
+        <h3>@ 2024</h3>
     </footer>
 
 </body>
