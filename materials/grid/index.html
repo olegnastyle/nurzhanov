@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шаблон Grid контейнера</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-center text-2xl text-teal-900">Шаблон Grid контейнера</h1>
+    <code>
+        <pre class="bg-teal-900 text-teal-200 m-2 p-8 pb-0 w-max">
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet"&gt;
+    &lt;style&gt;
+        .ns_grid_template {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas: "header header header" "main main aside" "footer footer footer";
+            width: 100vw;
+            height: 100vh;
+        }
+    &lt;/style&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body class="ns_grid_template"&gt;
+    &lt;header class="bg-blue-500 h-20" style="grid-area: header;"&gt;
+        &lt;code&gt;header&lt;/code&gt;
+    &lt;/header&gt;
+
+    &lt;main class="bg-red-500" style="grid-area: main;"&gt;
+        &lt;code&gt;main&lt;/code&gt;
+    &lt;/main&gt;
+
+    &lt;aside class="bg-green-500" style="grid-area: aside;"&gt;
+        &lt;code&gt;aside&lt;/code&gt;
+    &lt;/aside&gt;
+
+    &lt;footer class="h-20 bg-yellow-500" style="grid-area: footer;"&gt;
+        &lt;code&gt;footer&lt;/code&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+    </code>
+</body>
+</html>
