@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 29. Научное наследие</title>
+    <!-- подключаем TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- подключаем свои шрифты -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- навигация задания -->
+    <nav class="w-full h-max flex flex-row-reverse bg-teal-100 p-2 *:text-teal-950 ">
+        <ul>
+            <li class="group">
+                <label for="mini" class="cursor-pointer block"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" /></svg></label>
+                <input type="checkbox" id="mini" class="hidden peer/mini">
+                <ul class="hidden peer-checked/mini:flex flex-col absolute right-2 border border-teal-300 divide-y divide-teal-200 bg-teal-100">
+                    <li><a class="hover:bg-teal-300 block p-1" target="_blank" href="http://www.itmathrepetitor.ru/zadachi-po-html-i-css-nauchnoe-nasledie/">Ссылка на задание</a></li>
+                    <li><a class="hover:bg-teal-300 block p-1" href="http://127.0.0.1:5500/">На главную</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- выполняем задание внутри id="app" -->
+    <div id="app" class="h-screen w-screen flex justify-center items-center">
+        <ul class="flex flex-col divide-y divide-slate-800">
+            <li><a href="#">Научное наследие</a></li>
+            <li>
+                <a href="#">Теория</a>
+                <ul>
+                    <li>
+                        <a href="#">Отдельные издания</a>
+                        <ul class="hidden">
+                            <li>Издание 1</li>
+                            <li>Издание 2</li>
+                            <li>Издание 3</li>
+                        </ul>
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li><a href="#">Практика</a></li>
+            <li><a href="#">История</a></li>
+            <li><a href="#">Периодические издания</a></li>
+            <li><a href="#">Справочные материалы</a></li>
+            <li><a href="#">Библиография</a></li>
+            <li><a href="#">Материалы научно-практических мероприятий</a></li>
+        </ul>
+    </div>
+</body>
+</html>
