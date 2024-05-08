@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./style/main.css">
 </head>
 
-<body class="ns_grid_template">
+<body class="ns_grid_template overflow-x-hidden">
 
     <header class="h-20 px-4 flex items-center justify-between">
         <h2 class="text-3xl uppercase text-teal-400"><span class="text-teal-600">НА</span>стиле</h2>
@@ -34,18 +34,26 @@
     </header>
 
     <main class="px-4">
-        <h2>Блог</h2>
-        <div class="flex flex-wrap gap-4">
-            <div class="w-60 h-80 bg-teal-800"></div>
-            <div class="w-60 h-80 bg-teal-800"></div>
-            <div class="w-60 h-80 bg-teal-800"></div>
-            <div class="w-60 h-80 bg-teal-800"></div>
-            <div class="w-60 h-80 bg-teal-800"></div>
-            <div class="w-60 h-80 bg-teal-800"></div>
-            <div class="w-60 h-80 bg-teal-800"></div>
-            <div class="w-60 h-80 bg-teal-800"></div>
-            <div class="w-60 h-80 bg-teal-800"></div>
-            <div class="w-60 h-80 bg-teal-800"></div>
+        <h2 class="text-2xl font-medium">Блог</h2>
+        <div class="flex flex-wrap gap-4 *:w-56">
+            <div class="h-80 bg-teal-800"></div>
+            <div class="h-80 bg-teal-800"></div>
+            <div class="h-80 bg-teal-800"></div>
+            <div class="h-80 bg-teal-800"></div>
+            <div class="h-80 bg-teal-800"></div>
+            <div class="h-80 bg-teal-800"></div>
+            <div class="h-80 bg-teal-800"></div>
+            <div class="h-80 bg-teal-800"></div>
+            <div class="h-80 bg-teal-800"></div>
+            <div class="h-80 bg-teal-800"></div>
+            <div class="h-80 bg-teal-800"></div>
+            <div class="h-80 bg-teal-800"></div>
+            <div class="h-80 bg-teal-800"></div>
+            <div class="h-80 bg-teal-800"></div>
+            <div class="h-80 bg-teal-800"></div>
+            <div class="h-80 bg-teal-800"></div>
+            <div class="h-80 bg-teal-800"></div>
+            <div class="h-80 bg-teal-800"></div>
         </div>
     </main>
 
@@ -53,7 +61,11 @@
         <div class="p-4 flex flex-col gap-4 bg-teal-50 ">
             <h2 class="text-xl font-medium">Домашние задания</h2>
             <h3 class="text-lg font-medium">Часть 2</h3>
-            <div class="*:p-3 *:bg-teal-300 flex flex-wrap gap-4">
+            <div class="bg-teal-500 p-12 pr-0 box-border
+                        flex flex-wrap gap-4
+                        *:w-40 *:h-8 *:bg-teal-300 *:flex *:justify-center *:items-center
+                        *:text-teal-950 hover:*:brightness-125
+                        ">
                 <a href="./homeworks/char2/01/">Задание 1</a>
                 <a href="./homeworks/char2/02/">Задание 2</a>
                 <a href="./homeworks/char2/03/">Задание 3</a>
@@ -71,8 +83,8 @@
         </div>
     </aside>
 
-    <footer class="h-20 px-4 flex items-center justify-between">
-        <h3>@ 2024</h3>
+    <footer class="h-20 my-20 px-4 flex items-center justify-between bg-teal-950 text-teal-100">
+        <h3>© 2024</h3>
     </footer>
 
 </body>
