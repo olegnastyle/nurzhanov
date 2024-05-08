@@ -1,0 +1,57 @@
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Шаблон для заданий</title> 
+    <!-- подключаем TailwindCSS --> 
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <!-- подключаем свои шрифты --> 
+    <link rel="stylesheet" href="./style.css"> 
+</head> 
+<body> 
+    <!-- навигация задания --> 
+    <nav class="w-full h-max flex flex-row-reverse bg-teal-100 p-2 *:text-teal-950 "> 
+        <ul> 
+            <li class="group"> 
+                <label for="mini" class="cursor-pointer block"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" /></svg></label> 
+                <input type="checkbox" id="mini" class="hidden peer/mini"> 
+                <ul class="hidden peer-checked/mini:flex flex-col absolute right-2 border border-teal-300 divide-y divide-teal-200 bg-teal-100"> 
+                    <li><a class="hover:bg-teal-300 block p-1" href="http://127.0.0.1:5500/">На главную</a></li> 
+                </ul> 
+            </li> 
+        </ul> 
+    </nav> 
+    <!-- выполняем задание внутри id="app" --> 
+    <div id="app" class=""> 
+         <code>
+            <pre class="bg-teal-950 text-teal-100 py-12">
+    &lt;html lang="ru"&gt; 
+    &lt;head&gt; 
+        &lt;meta charset="UTF-8"&gt; 
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; 
+        &lt;title&gt;Задание 24. Три квадрата&lt;/title&gt; 
+        &lt;!-- подключаем TailwindCSS --&gt; 
+        &lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt; 
+        &lt;!-- подключаем свои шрифты --&gt; 
+        &lt;link rel="stylesheet" href="./style.css"&gt; 
+    &lt;/head&gt; 
+    &lt;body&gt; 
+        &lt;!-- навигация задания --&gt; 
+        &lt;nav class="w-full h-max flex flex-row-reverse bg-teal-100 p-2 *:text-teal-950 "&gt; 
+            &lt;ul&gt; 
+                &lt;li class="group"&gt; 
+                    &lt;label for="mini" class="cursor-pointer block"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" /&gt;&lt;/svg&gt;&lt;/label&gt; 
+                    &lt;input type="checkbox" id="mini" class="hidden peer/mini"&gt; 
+                    &lt;ul class="hidden peer-checked/mini:flex flex-col absolute right-2 border border-teal-300 divide-y divide-teal-200 bg-teal-100"&gt; 
+                        &lt;li&gt;&lt;a class="hover:bg-teal-300 block p-1" target="_blank" href="http://www.itmathrepetitor.ru/zadachi-po-html-i-css-tri-kvadrata/"&gt;Ссылка на задание&lt;/a&gt;&lt;/li&gt; 
+                        &lt;li&gt;&lt;a class="hover:bg-teal-300 block p-1" href="http://127.0.0.1:5500/"&gt;На главную&lt;/a&gt;&lt;/li&gt; 
+                    &lt;/ul&gt; 
+                &lt;/li&gt; 
+            &lt;/ul&gt; 
+        &lt;/nav&gt; 
+                
+            </pre>
+         </code>
+    </div> 
+</body> 
+</html>
