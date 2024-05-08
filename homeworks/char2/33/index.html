@@ -1,0 +1,60 @@
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Задание 33. Самое читаемое</title> 
+    <!-- подключаем TailwindCSS --> 
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <!-- подключаем свои шрифты --> 
+    <link rel="stylesheet" href="./style.css"> 
+</head> 
+<body> 
+    <!--
+        Правила выполнение задания:
+        - Меняем <title>
+        - Добавляем ссылку на задание
+        - Выполняем задание в div с id="app"
+    -->
+    <nav class="w-full h-max flex flex-row-reverse bg-teal-100 p-2 *:text-teal-950 "> 
+        <ul> 
+            <li class="group"> 
+                <label for="mini" class="cursor-pointer block"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" /></svg></label> 
+                <input type="checkbox" id="mini" class="hidden peer/mini"> 
+                <ul class="hidden peer-checked/mini:flex flex-col absolute right-2 border border-teal-300 divide-y divide-teal-200 bg-teal-100"> 
+                    <li class="flex gap-4"><a class="hover:bg-teal-300 block p-1" href="../../../materials/template/">Шаблон задания</a></li>
+                    <li class="flex gap-4"><a class="hover:bg-teal-300 block p-1" target="_blank" href="http://www.itmathrepetitor.ru/zadachi-po-html-i-css-samoe-chitaemoe/">Ссылка на задание</a></li> 
+                    <li class="flex gap-4"><a class="hover:bg-teal-300 block p-1" href="../../../index.html">На главную</a></li> 
+                </ul> 
+            </li> 
+        </ul> 
+    </nav> 
+    <!-- выполняем задание внутри id="app" --> 
+    <div id="app" class="w-screen h-screen flex justify-center items-center"> 
+        <div class="border border-black p-4 w-[420px]">
+            <ul class="flex flex-col gap-4 *:p-2 divide-y divide-dashed divide-black">
+                <li><h2 class="text-[42px] text-nowrap uppercase text-center">Самое читаемое</h2></li>
+                <li class="flex gap-4">
+                    <img src="https://htstatic.imgsmail.ru/pic_image/c1eb09934b188594b0b640a6d8ce1abd/1050/440/1213756/" width="180" height="80">
+                    <a class="hover:underline" href="#">Наземные телескопы не способны засечь смертоносные астероиды</a>
+                </li>
+                <li class="flex gap-4">
+                    <img src="https://htstatic.imgsmail.ru/pic_image/f361ecdb504456b4ffff00ebac179117/282/200/1213484/" width="180" height="80">
+                    <a class="hover:underline" href="#">A-бренды начали отказываться от поставок дорогой техники в Россию</a>
+                </li>
+                <li class="flex gap-4">
+                    <img src="https://htstatic.imgsmail.ru/pic_image/1af7b0505249241fdee2433f73313128/180/120/1213753/" width="180" height="80">
+                    <a class="hover:underline" href="#">Представлен уникальный автомобиль, «чувствующий» водителя</a>
+                </li>
+                <li class="flex gap-4">
+                    <img src="https://htstatic.imgsmail.ru/pic_image/2c8dd76e955e202b1a087fc29af559a5/180/120/1213750/" width="180" height="80">
+                    <a class="hover:underline" href="#">Детей прокатили по Марсу на автобусе с помощью виртуальной реальности</a>
+                </li>
+                <li class="flex gap-4">
+                    <img src="https://htstatic.imgsmail.ru/pic_image/07a12785bc9bba8a8c8c7c4bbed793c8/1050/440/1213746/" width="180" height="80">
+                    <a class="hover:underline" href="#">Процессор, делающий ошибки, оказался в 100 раз эффективнее традиционного</a>
+                </li>
+            </ul>
+        </div>
+    </div> 
+</body> 
+</html>
